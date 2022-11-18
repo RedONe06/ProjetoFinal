@@ -1,6 +1,6 @@
 [ ] Tela Login (login ou cadastro, boas vindas); --> Priscila
 
-[ ] Cadastro (id, nome, email, senha, datanasci, ativo)
+[x] Cadastro (id, nome, email, senha, datanasci, ativo)
 
 [ ] Portal de fotos de gatinhos (logout)
 
