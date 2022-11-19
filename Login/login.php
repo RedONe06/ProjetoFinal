@@ -7,7 +7,6 @@ $senha = isset($_POST['senha']) ? $_POST['senha'] : '';
 if (empty($email) || empty($senha))
 {
     echo "Informe email e senha";
-    echo "Email: ". var_dump($email). "e Senha:".var_dump($senha);
     exit;
 }
  
@@ -36,7 +35,6 @@ if (count($users) <= 0)
 }
  
 $user = $users[0];
-var_dump($user);
 
 if($user['ativo'] == false){
     echo "Você ainda não está autorizado pelo ADM. Aguarde a autorização.";

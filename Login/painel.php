@@ -13,6 +13,6 @@ require_once("init.php");
 </head>
 <body>
     <h1>Painel do usuário</h1>
-    <a href="/Login/form-login.php">Voltar</a>
+    <a href="form-login.php">Voltar</a>
 </body>
 </html>

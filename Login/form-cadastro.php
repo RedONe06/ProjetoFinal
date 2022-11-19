@@ -1,5 +1,5 @@
 <?php
-require("post.php");
+require("bd-methods.php");
 require_once("init.php");
 ?>
 <!DOCTYPE html>
@@ -12,7 +12,7 @@ require_once("init.php");
 </head>
 
 <body>
-    <form action="cadastro.php" method="post">
+    <form action="form-cadastro.php" method="post">
         <input type="text" name="nome" placeholder="nome" <?php
             if (isset($nome) && $nome != null || $nome != "") {
                 echo "value=\"{$nome}\"";
@@ -38,3 +38,33 @@ require_once("init.php");
     <a href="form-login.php">Voltar</a>
 </body>
 </html>
+<?php
+if (isset($_POST["cadastrar"])) {
+    try {
+        $stmt = db_connect()->prepare("INSERT INTO usuarios (nome, email, senha, datanascimento, ativo) VALUES (?, ?, ?, ?, ?)");
+        $stmt->bindParam(1, $nome);
+        $stmt->bindParam(2, $email);
+        $senha = make_hash($senha);
+        $stmt->bindParam(3, $senha);
+        $stmt->bindParam(4, $datanascimento);
+        $stmt->bindParam(5, $ativo);
+
+        if ($stmt->execute()) {
+            if ($stmt->rowCount() > 0) {
+                echo "Dados cadastrados com sucesso!";
+                $nome = null;
+                $email = null;
+                $senha = null;
+                $datanascimento = null;
+                $ativo = false;
+            } else {
+                echo "Erro ao tentar efetivar cadastro";
+            }
+        } else {
+            throw new PDOException("Erro: Não foi possível executar a declaração sql");
+        }
+    } catch (PDOException $erro) {
+        echo "Erro: ".$erro->getMessage();
+    }
+}
+?>
