@@ -22,7 +22,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.php">Home</a>
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -46,19 +46,29 @@
     <div class="container-fluid d-flex justify-content-center mt-4">
         <form class="box border border-2 p-3 rounded">
             <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Nome</label>
+                <input name="nome" type="text" class="form-control">
+            </div>
+            <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email</label>
                 <input name="email" type="email" class="form-control" id="exampleInputEmail1"
                     aria-describedby="emailHelp">
             </div>
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Data de aniversário</label>
+                <input name="dataNasc" type="date" class="form-control" >
+            </div>
+
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Senha</label>
                 <input name="senha" type="password" class="form-control" id="exampleInputPassword1">
             </div>
             <div class="mb-3 form-check d-flex justify-content-end">
-                <div id="emailHelp" class="form-text"><a href="#" class="cadastrar">Cadastrar-se agora</a></div>
+                <div id="emailHelp" class="form-text"><a href="#" class="cadastrar">Cadastro sujeito a aprovação</a></div>
             </div>
             <div class="d-flex justify-content-center">
-                <button type="submit" class="btn  btn-lg">Entrar</button>
+                <button type="submit" class="btn  btn-lg">Cadastra</button>
             </div>
         </form>
 

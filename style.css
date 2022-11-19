@@ -1,0 +1,56 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    text-decoration: none;
+}
+body {
+	line-height: 1;
+}
+.cadastrar{
+    text-decoration: none;
+    color: #31087B;
+}
+.nav{
+    align-items: center;
+}
+.navbar{
+    background-color: blueviolet;
+}
+.nav-link{
+    background-color: blueviolet;
+    color: azure;
+}
+.nav-link:hover{
+    background-color: #F675A8;
+    color: azure;
+}
+.nav-link::after{
+    color: azure;
+}
+
+ .dropdown-item:hover{
+    background-color: #F675A8;
+    color: azure;
+}
+
+.box {
+    flex-direction: column;
+    width: 30%;
+    background-color: #F675A8;
+}
+input{
+   background-color: #A084CA;
+}
+.btn{
+    background-color: blueviolet;
+    color: azure;
+}
+.btn:hover{
+    background-color: #FFCCB3;
+}
+
+/*Cadastro*/
