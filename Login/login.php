@@ -7,13 +7,19 @@ $senha = isset($_POST['senha']) ? $_POST['senha'] : '';
 if (empty($email) || empty($senha))
 {
     echo "Informe email e senha";
+    echo "Email: ". var_dump($email). "e Senha:".var_dump($senha);
     exit;
 }
  
 $senhaHash = make_hash($senha);
-$PDO = db_connect();
- 
-$sql = "SELECT id, ativo name FROM usuarios WHERE email = :email AND senha = :senha";
+
+try{
+    $PDO = db_connect();
+} catch (PDOException $erro) {
+    echo "Erro na conexão:" . $erro->getMessage();
+}
+
+$sql = "SELECT id, ativo FROM usuarios WHERE email = :email AND senha = :senha";
 $stmt = $PDO->prepare($sql);
  
 $stmt->bindParam(':email', $email);
@@ -30,6 +36,7 @@ if (count($users) <= 0)
 }
  
 $user = $users[0];
+var_dump($user);
 
 if($user['ativo'] == false){
     echo "Você ainda não está autorizado pelo ADM. Aguarde a autorização.";
