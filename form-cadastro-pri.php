@@ -1,6 +1,9 @@
+<?php
+require("post.php");
+require_once("init.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +13,6 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-
 <body>
         <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
@@ -34,7 +36,7 @@
                             <hr class="dropdown-divider">
                             <li><a class="dropdown-item" href="#">Login</a></li>
                             <li>
-                                
+                        
                             </li>
                         </ul>
                     </li>
@@ -47,7 +49,7 @@
         <form class="box border border-2 p-3 rounded">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Nome</label>
-                <input name="nome" type="text" class="form-control">
+                <input name="nome" type="text" class="form-control" >
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email</label>
