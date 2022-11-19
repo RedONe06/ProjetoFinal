@@ -7,36 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
-        <nav class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nav nav-tabs justify-content-center">
 
-                <li class="nav-item-logo">
+                    <li class="nav-item-logo">
                         <img>LOGO AQUI</img>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="index.php">Home</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Entrar
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Cadastrar</a></li>
-                            <hr class="dropdown-divider">
-                            <li><a class="dropdown-item" href="#">Login</a></li>
-                            <li>
-                                
-                            </li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="form-cadastro-pri.php">Cadastrar</a>
+                    </li>
+
+
                     </li>
                 </ul>
             </div>
@@ -44,16 +37,20 @@
     </nav>
 
     <div class="container-fluid d-flex justify-content-center mt-4">
-        <form class="box border border-2 p-3 rounded">
+        <form action="#.php" method="post" class="box border border-2 p-3 rounded">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email</label>
                 <input name="email" type="email" class="form-control" id="exampleInputEmail1"
                     aria-describedby="emailHelp">
             </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Senha</label>
-                <input name="senha" type="password" class="form-control" id="exampleInputPassword1">
+
+            <div class="input-group mb-3">
+                <input type="password" class="form-control" id="password" aria-label="Amount (to the nearest dollar)">
+                <span class="input-group-text" id="togglePassword"><img id="olho" src="./img/eyeF.svg"
+                        alt="icone de olho"></span>
             </div>
+
+
             <div class="mb-3 form-check d-flex justify-content-end">
                 <div id="emailHelp" class="form-text"><a href="#" class="cadastrar">Cadastrar-se agora</a></div>
             </div>
@@ -63,6 +60,23 @@
         </form>
 
     </div>
+    <script>
+        let btn = document.querySelector('#togglePassword');
+        let olho = document.querySelector('#olho');
+
+        btn.addEventListener('click', function () {
+            let input = document.querySelector('#password');
+            if (input.getAttribute('type') == 'password') {
+                input.setAttribute('type', 'text');
+                olho.setAttribute('src', './img/eye.svg');
+
+            } else {
+                input.setAttribute('type', 'password');
+                olho.setAttribute('src', './img/eyeF.svg');
+            }
+        });
+    </script>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"

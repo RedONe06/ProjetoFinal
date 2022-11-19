@@ -1,7 +1,3 @@
-<?php
-require("post.php");
-require_once("init.php");
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +6,8 @@ require_once("init.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    
+        <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -24,18 +21,12 @@ require_once("init.php");
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="index.php">Home</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Entrar
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Cadastrar</a></li>
-                            <hr class="dropdown-divider">
-                            <li><a class="dropdown-item" href="#">Login</a></li>
-                            <li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.php">Entrar</a>
+                    </li>
+                    
                         
                             </li>
                         </ul>
@@ -64,8 +55,13 @@ require_once("init.php");
 
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Senha</label>
-                <input name="senha" type="password" class="form-control" id="exampleInputPassword1">
+                <input name="senha1" type="password" class="form-control" id="InputPassword1">
             </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Confirmação de senha</label>
+                <input name="senha2" type="password" class="form-control" id="InputPassword2">
+            </div>
+
             <div class="mb-3 form-check d-flex justify-content-end">
                 <div id="emailHelp" class="form-text"><a href="#" class="cadastrar">Cadastro sujeito a aprovação</a></div>
             </div>
