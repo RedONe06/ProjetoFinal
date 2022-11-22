@@ -1,42 +1,52 @@
---cor_primaria{
- violeta: #7A4495;
-}
 
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
     text-decoration: none;
+   
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
+    background-image: url("./img/background.png");
 }
-.cadastrar{
+
+.opcaoCadastrarAgora {
     text-decoration: none;
     color: #31087B;
 }
+
 .nav{
     align-items: center;
 }
-.navbar{
-    background-color: blueviolet;
+
+#menu{
+    background: rgb(150,70,179);
+background: linear-gradient(90deg, rgba(150,70,179,1) 14%, rgba(235,143,241,1) 52%, rgba(150,70,179,1) 95%);
+box-shadow: 0px 4px 5px 0px rgba(179,147,179,1);
+}
+li{
+    border: none;
 }
 .nav-link{
-    background-color: blueviolet;
-    color: azure;
-}
-.nav-link:hover{
-    background-color: #F675A8;
-    color: azure;
-}
-.nav-link::after{
     color: azure;
 }
 
- .dropdown-item:hover{
+.nav-link:hover {
+    border-radius: 8%;
+    background-color: #F675A8;
+    color: azure;
+}
+
+.nav-link::after {
+    color: azure;
+}
+
+.dropdown-item:hover {
     background-color: #F675A8;
     color: azure;
 }
@@ -45,16 +55,43 @@ body {
     flex-direction: column;
     width: 30%;
     background-color: #F675A8;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
-input{
-   background-color: #A084CA;
+
+input {
+    background-color: #A084CA;
 }
-.btn{
+
+.btn {
     background-color: blueviolet;
     color: azure;
 }
-.btn:hover{
-    background-color: #FFCCB3;
+
+.btn:hover {
+    background-color: #F675A8;
 }
 
-/*Cadastro*/
+/* painel adm*/
+#tituloAgenda{
+  color: #a720c2;  
+  margin-top: 10px;
+
+}
+label{
+    font-size: large;
+}
+
+#div-botoes-editar{
+    margin-left: -5%;
+}
+.table{
+    background-color: #F675A8;
+}
+th{
+    font-weight: 600;
+}
+th:hover{
+   
+}
