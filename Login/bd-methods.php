@@ -7,9 +7,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = (isset($_POST["email"]) && $_POST["email"] != null) ? $_POST["email"] : "";
     $senha = (isset($_POST["senha"]) && $_POST["senha"] != null) ? $_POST["senha"] : "";
     $datanascimento = (isset($_POST["datanascimento"]) && $_POST["datanascimento"] != null) ? $_POST["datanascimento"] : "";
-    $ativo = false;
+    $ativo = (isset($_POST["radio"]) && $_POST["radio"] != null) ? $_POST["radio"] : "";
 }  else  {
-   
     $id = (isset($_GET["id"]) && $_GET["id"] != null) ? $_GET["id"] : "";
     $nome = null;
     $email = null;
