@@ -7,17 +7,30 @@
     font: inherit;
     vertical-align: baseline;
     text-decoration: none;
-   
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#logo{
+width: 100px;
 }
 
 body {
     line-height: 1;
-    background-image: url("../img/background.png");
+    background: url("../img/background.png") no-repeat ;
+    background-size: cover;
+    
 }
 
 .opcaoCadastrarAgora {
     text-decoration: none;
-    color: #31087B;
+    color: rgb(253, 208, 6);
+    font-size: large;
+}
+.opcaoCadastrarAgora:hover{
+    color: #f25849;
 }
 
 .nav{
@@ -25,9 +38,8 @@ body {
 }
 
 #menu{
-    background: rgb(150,70,179);
-background: linear-gradient(90deg, rgba(150,70,179,1) 14%, rgba(235,143,241,1) 52%, rgba(150,70,179,1) 95%);
-box-shadow: 0px 4px 5px 0px rgba(179,147,179,1);
+background-color: #f25849;
+box-shadow: 0px 4px 4px rgba(0,0,0, 0.25);
 }
 li{
     border: none;
@@ -38,7 +50,7 @@ li{
 
 .nav-link:hover {
     border-radius: 8%;
-    background-color: #F675A8;
+    background-color: rgb(253, 208, 6);
     color: azure;
 }
 
@@ -47,35 +59,51 @@ li{
 }
 
 .dropdown-item:hover {
-    background-color: #F675A8;
+    background-color: #f25849;
     color: azure;
 }
 
 .box {
     flex-direction: column;
     width: 30%;
-    background-color: #F675A8;
+    background-color: white;
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 
-input {
-    background-color: #A084CA;
+.input-adm{
+    margin: 5px;
 }
 
+.opcao-ativo{
+    margin-right: 15%;
+    font-size: large;
+    font-weight: bold;
+}
+.opcao-inativo{
+    font-size: large;
+    font-weight: bold;
+}
+
+
 .btn {
-    background-color: blueviolet;
+    background-color: #f25849;
     color: azure;
 }
 
 .btn:hover {
-    background-color: #F675A8;
+    background-color: rgb(253, 208, 6);
+    border: 1px solid azure;
 }
 
 /* painel adm*/
+.div-titulo{
+    background-color: white;
+    height: 75px;
+}
 #tituloAgenda{
-  color: #a720c2;  
+  color: black; 
   margin-top: 10px;
 
 }
@@ -86,12 +114,28 @@ label{
 #div-botoes-editar{
     margin-left: -5%;
 }
-.table{
-    background-color: #F675A8;
+
+.form-edicao{
+    width: 100vh;
+}
+
+.table-striped{
+    background-color: white;
+}
+.tr-tabela{
+    background-color: #f25849;
+}
+.box-tabela{
+    width: 100%;
+   padding: 0;
+}
+tr:hover{
+    background-color: #d3d2cb;
 }
 th{
     font-weight: 600;
 }
+
 .container-imagens{
     display: flex;
     flex-wrap: wrap;
@@ -105,7 +149,7 @@ th{
     align-items: center;
     margin: 20px;
     width: 280px;
-    background-color: #e78bee;
+    background-color: #f25849;
     border-radius: 8%;
     box-shadow: 2px 2px 2px rgb(122, 121, 121);
 }
@@ -117,4 +161,15 @@ th{
 }
 h2{
     font-size: 20px;
+}
+
+.icons{
+    width: 18px;
+}
+.radio{
+    margin-right: 10%;
+    display: flex;
+}
+#div-botoes-editar{
+    padding-right: 12%;
 }

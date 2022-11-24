@@ -23,14 +23,14 @@ require('init.php');
                 <ul class="nav justify-content-center">
 
                     <li class="li-logo">
-                        <img id="logo" >LOGO AQUI</img>
+                    <img id="logo" src="../img/logo.png">
                     </li>
 
                     <li >
                         <a class="nav-link" aria-current="page" href="index.php">Home</a>
                     </li>
                     <li >
-                        <a class="nav-link" aria-current="page" href="form-cadastro-pri.php">Cadastrar</a>
+                        <a class="nav-link" aria-current="page" href="form-cadastro.php">Cadastrar</a>
                     </li>
 
 
@@ -44,7 +44,7 @@ require('init.php');
 <body>
     <div class="container-fluid d-flex justify-content-center mt-4">
 
-        <form action="form-login.php" method="post" class="box border border-2 p-3 rounded">
+        <form action="form-login.php" method="post" class="box border border-danger border-2 p-3 rounded">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email</label>
                 <input name="email" type="email" class="form-control" id="exampleInputEmail1"
