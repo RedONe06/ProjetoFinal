@@ -28,7 +28,7 @@ require_once("init.php");
                         <a class="nav-link opcao-menu" aria-current="page" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link opcao-menu" aria-current="page" href="#">Sair</a>
+                        <a class="nav-link opcao-menu" aria-current="page" href="../login/logout.php">Sair</a>
                     </li>
                 </ul>
             </div>

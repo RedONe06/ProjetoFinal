@@ -13,32 +13,18 @@ require('login.php');
     <title>Login</title>
 </head>
 <header>
-<<<<<<< HEAD
-
     <nav class="navbar navbar-expand-lg menu-index" id="menu">
-=======
-    <nav class="navbar navbar-expand-lg " id="menu">
->>>>>>> 87090a4347c1fa96bbd8f90c37e63c2a39f5be16
         <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nav justify-content-center">
                     <li class="li-logo">
                         <img id="logo" src="../img/logo.png">
                     </li>
-<<<<<<< HEAD
-
                     <li >
                         <a class="nav-link opcao-menu" aria-current="page" href="../index.php">Home</a>
                     </li>
                     <li >
                         <a class="nav-link opcao-menu" aria-current="page" href="../cadastro/form-cadastro.php">Cadastrar</a>
-=======
-                    <li>
-                        <a class="nav-link" aria-current="page" href="../index.php">Home</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" aria-current="page" href="form-cadastro.php">Cadastrar</a>
->>>>>>> 87090a4347c1fa96bbd8f90c37e63c2a39f5be16
                     </li>
                 </ul>
             </div>

@@ -26,6 +26,9 @@ require("./adm-methods.php");
                     <li class="nav-item">
                         <a class="nav-link opcao-menu" aria-current="page" href="../painel.php">Painel</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link opcao-menu" aria-current="page" href="../login/logout.php">Sair</a>
+                    </li>
                 </ul>
             </div>
         </div>
