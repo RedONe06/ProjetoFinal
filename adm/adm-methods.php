@@ -14,13 +14,17 @@ function salvar_alteracoes($id, $nome, $email, $datanascimento, $ativo){
             $stmt->bindParam(5, $id);
 
             if ($stmt->execute()) {
-                echo "Dados editados com sucesso!";
+                echo "<div class='alert alert-success d-flex justify-content-center' width='80px' height='80px' role='alert'>
+                    <p text-align= 'center'>Dados editados com sucesso!!</p>
+                  </div>";
                 anular_variaveis($id, $nome, $email, $datanascimento, $ativo);
             } else {
                 throw new PDOException("Erro: Não foi possível executar a declaração sql");
             }
         } else {
-            echo "Id não identificado";
+            echo "<div class='alert alert-danger d-flex justify-content-center' width='80px' height='80px' role='alert'>
+                    <p text-align= 'center'>Id não identificado</p>
+                  </div>";
         }
     } catch (PDOException $erro) {
         echo "Erro: " . $erro->getMessage();
@@ -43,7 +47,9 @@ function atualizar_tabela(){
                 imprimir_tabela($rs->id, $rs->nome, $rs->email, $rs->datanascimento, $rs->ativo);
             }
         } else {
-            echo "Erro: Não foi possível recuperar os dados do banco de dados";
+            echo "<div class='alert alert-danger d-flex justify-content-center' width='80px' height='80px' role='alert'>
+            <p text-align= 'center'>Erro: Não foi possível recuperar os dados do banco de dados</p>
+          </div>";
         }
     } catch (PDOException $erro) {
         echo "Erro: " . $erro->getMessage();
