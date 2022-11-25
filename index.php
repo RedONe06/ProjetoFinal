@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Home</title>
 </head>
 <header>
     <nav class="navbar navbar-expand-lg " id="menu">
@@ -20,10 +20,10 @@
                     </li>
 
                     <li>
-                        <a class="nav-link" aria-current="page" href="./Login/form-login.php">Login</a>
+                        <a class="nav-link opcao-menu" aria-current="page" href="./Login/form-login.php">Login</a>
                     </li>
                     <li>
-                        <a class="nav-link" aria-current="page" href="./cadastro/form-cadastro.php">Cadastrar</a>
+                        <a class="nav-link opcao-menu" aria-current="page" href="./cadastro/form-cadastro.php">Cadastrar</a>
                     </li>
                 </ul>
             </div>
@@ -31,14 +31,17 @@
     </nav>
 </header>
 
-<body>
+<body class="body-index">
     <div class="container-index d-flex justify-content-center">
-        <div class="box1-index text-center d-flex justify-content-center flex-column">
+    <div class="box2-index">
+            <img class="img401" src="./img/error401.png">
+        </div>
 
+        <div class="box1-index text-center d-flex justify-content-center flex-column">
             <div class="box1-textos">
-                <h1>Ihhh deu erro</h1>
-                <h3>E agora?</h3>
-                <p>De maneira descontraida vamos te mostrar o que cada erro significa.</p>
+                <h1 class="h1-index"><strong> Ihhh deu erro</strong></h1>
+                <h3 class="h3-index">E agora?</h3>
+                <p class="p-index">De maneira descontraida vamos te mostrar o que cada erro significa.</p>
             </div>
 
             <div class="card-erro-index">
@@ -48,13 +51,11 @@
             </div>
 
             <div class="d-flex justify-content-center">
-                <button type="submit" href="./cadastro/form-cadastro.php" class="btn  btn-lg" >  <a class="nav-link" aria-current="page" href="./cadastro/form-cadastro.php">Cadastre-se agora</a></button>
+                <button type="submit" href="./cadastro/form-cadastro.php" class="btn btn-index  btn-lg" >  <a class="nav-link" aria-current="page" href="./cadastro/form-cadastro.php">Cadastre-se agora</a></button>
             </div>
+        </div>
 
-        </div>
-        <div class="box2-index">
-            <img class="img401" src="./img/error401.png">
-        </div>
+       
     </div>
 </body>
 
