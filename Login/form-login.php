@@ -32,8 +32,6 @@ require('init.php');
                     <li >
                         <a class="nav-link" aria-current="page" href="form-cadastro.php">Cadastrar</a>
                     </li>
-
-
                     </li>
                 </ul>
             </div>

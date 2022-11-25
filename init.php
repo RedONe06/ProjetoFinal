@@ -7,5 +7,5 @@ define('DB_NAME', 'bdfinal');
 ini_set('display_errors', true);
 error_reporting(E_ALL);
 
-require_once 'login-functions.php';
+require_once 'login/login-functions.php';
 ?>

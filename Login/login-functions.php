@@ -21,8 +21,4 @@ function isLoggedIn()
  
     return true;
 }
-
-function setarVariaveis(){
-    
-}
 ?>

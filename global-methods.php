@@ -1,5 +1,5 @@
 <?php
-//TODO Verificar se o email do usuário já existe no banco antes de continuar o cadastro
+require ("init.php");
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $id = (isset($_POST["id"]) && $_POST["id"] != null) ? $_POST["id"] : "";
@@ -16,3 +16,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $datanascimento = null;
     $ativo = false;
 }
+?>
