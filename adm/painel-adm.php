@@ -10,7 +10,7 @@ require("./adm-methods.php");
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
-    <title>Teste adm</title>
+    <title>Painel adm</title>
 </head>
 <header>
     <nav class="navbar navbar-expand-lg " id="menu">
@@ -21,10 +21,10 @@ require("./adm-methods.php");
                         <img id="logo" src="../img/logo.png">
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.php">Home</a>
+                        <a class="nav-link opcao-menu" aria-current="page" href="../index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../painel.php">Painel</a>
+                        <a class="nav-link opcao-menu" aria-current="page" href="../painel.php">Painel</a>
                     </li>
                 </ul>
             </div>

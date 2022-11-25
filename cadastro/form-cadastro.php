@@ -22,10 +22,10 @@ require("cadastro-methods.php");
                         <img id="logo" src="../img/logo.png">
                     </li>
                     <li >
-                        <a class="nav-link" aria-current="page" href="../index.php">Home</a>
+                        <a class="nav-link opcao-menu" aria-current="page" href="../index.php">Home</a>
                     </li>
                     <li >
-                        <a class="nav-link" aria-current="page" href="form-cadastro.php">Login</a>
+                        <a class="nav-link opcao-menu" aria-current="page" href="../login/form-login.php">Login</a>
                     </li>
                 </ul>
             </div>

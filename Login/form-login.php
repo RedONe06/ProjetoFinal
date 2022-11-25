@@ -10,21 +10,35 @@ require('login.php');
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
-    <title>Document</title>
+    <title>Login</title>
 </head>
 <header>
+<<<<<<< HEAD
+
+    <nav class="navbar navbar-expand-lg menu-index" id="menu">
+=======
     <nav class="navbar navbar-expand-lg " id="menu">
+>>>>>>> 87090a4347c1fa96bbd8f90c37e63c2a39f5be16
         <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nav justify-content-center">
                     <li class="li-logo">
                         <img id="logo" src="../img/logo.png">
                     </li>
+<<<<<<< HEAD
+
+                    <li >
+                        <a class="nav-link opcao-menu" aria-current="page" href="../index.php">Home</a>
+                    </li>
+                    <li >
+                        <a class="nav-link opcao-menu" aria-current="page" href="../cadastro/form-cadastro.php">Cadastrar</a>
+=======
                     <li>
                         <a class="nav-link" aria-current="page" href="../index.php">Home</a>
                     </li>
                     <li>
                         <a class="nav-link" aria-current="page" href="form-cadastro.php">Cadastrar</a>
+>>>>>>> 87090a4347c1fa96bbd8f90c37e63c2a39f5be16
                     </li>
                 </ul>
             </div>
@@ -49,7 +63,7 @@ require('login.php');
             </div>
 
             <div class="mb-3 form-check d-flex justify-content-end">
-                <div id="emailHelp" class="form-text"><a href="form-cadastro.php"
+                <div id="emailHelp" class="form-text"><a href="../cadastro/form-cadastro.php"
                         class="opcaoCadastrarAgora">Cadastrar-se agora</a></div>
             </div>
             <div class="d-flex justify-content-center">
