@@ -37,48 +37,29 @@ require("cadastro-methods.php");
         <form class="box border-danger border border-2 p-3 rounded" action="form-cadastro.php" method="post">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Nome</label>
-                <input name="nome" type="text" class="form-control" <?php
-            if (isset($nome) && $nome != null || $nome != "") {
-                echo "value=\"{$nome}\"";
-            }
-            ?>>
-    
+                <input name="nome" type="text" class="form-control" <?php settar_value($nome)?>>
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email</label>
                 <input name="email" type="email" class="form-control" id="exampleInputEmail1"
-                    aria-describedby="emailHelp" <?php
-            if (isset($email) && $email != null || $email != "") {
-                echo "value=\"{$email}\"";
-            }
-            ?>>
+                    aria-describedby="emailHelp" <?php settar_value($email)?>>
             </div>
-
             <label for="exampleInputPassword1" class="form-label">Senha</label>
             <div class="input-group mb-3">
-                <input name="senha1" type="password" id="password" class="form-control" <?php
-            if (isset($senha) && $senha != null || $senha != "") {
-                echo "value=\"{$senha}\"";
-            }
-            ?>> 
+                <input name="senha1" type="password" id="password" class="form-control" <?php settar_value($senha)?>> 
                 <span class="input-group-text" id="togglePassword"><img id="olho" src="../img/eyeF.svg"
                         alt="icone de olho"></span>
             </div>
 
             <label class="form-label">Confirmação de senha</label>
             <div class="input-group mb-3">
-                <input name="senha2" type="password" id="password2" class="form-control">
+                <input name="senha2" type="password" id="password2" class="form-control" <?php settar_value($senha2)?>>
                 <span class="input-group-text" id="togglePassword2"><img id="olho2" src="../img/eyeF.svg"
                         alt="icone de olho"></span>
             </div>
-
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Data de aniversário</label>
-                <input name="dataNasc" type="date" class="form-control" <?php
-            if (isset($datanascimento) && $datanascimento != null || $datanascimento != "") {
-                echo "value=\"{$datanascimento}\"";
-            }
-            ?>>
+                <input name="dataNasc" type="date" class="form-control" <?php settar_value($datanascimento)?>>
             </div>
             <div class="mb-3 form-check d-flex justify-content-end">
                 <div id="emailHelp" class="form-text"><a href="#" class="cadastrar">Cadastro sujeito a aprovação</a></div>
@@ -99,6 +80,6 @@ require("cadastro-methods.php");
 
 <?php
 if (isset($_POST["cadastrar"])) {
-    cadastrar($nome, $email, $senha, $datanascimento, $ativo);
+    cadastrar($nome, $email, $senha, $senha2, $datanascimento, $ativo);
 }
 ?>
