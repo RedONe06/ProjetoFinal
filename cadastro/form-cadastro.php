@@ -22,10 +22,10 @@ require("cadastro-methods.php");
                         <img id="logo" src="../img/logo.png">
                     </li>
                     <li >
-                        <a class="nav-link" aria-current="page" href="index.php">Home</a>
+                        <a class="nav-link" aria-current="page" href="../index.php">Home</a>
                     </li>
                     <li >
-                        <a class="nav-link" aria-current="page" href="form-login.php">Login</a>
+                        <a class="nav-link" aria-current="page" href="form-cadastro.php">Login</a>
                     </li>
                 </ul>
             </div>
@@ -68,7 +68,7 @@ require("cadastro-methods.php");
             <label class="form-label">Confirmação de senha</label>
             <div class="input-group mb-3">
                 <input name="senha2" type="password" id="password2" class="form-control">
-                <span class="input-group-text" id="togglePassword2"><img id="olho2" src="/img/eyeF.svg"
+                <span class="input-group-text" id="togglePassword2"><img id="olho2" src="../img/eyeF.svg"
                         alt="icone de olho"></span>
             </div>
 

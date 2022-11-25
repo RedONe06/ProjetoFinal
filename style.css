@@ -8,9 +8,26 @@
     vertical-align: baseline;
     text-decoration: none;
 }
+/* Gerais */
 a{
     text-decoration: none;
     color: white;
+}
+
+.btn {
+    background-color: #f25849;
+    color: azure;
+}
+li{
+    border: none;
+}
+h2{
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: rgb(253, 208, 6);
+    border: 1px solid azure;
 }
 
 #logo{
@@ -21,18 +38,42 @@ body {
     line-height: 1;
     background: url("img/background.png") no-repeat ;
     background-size: cover;
+}
+/*Index*/
+.container-index{
+    width: 95%;
+    height: 200px;
+    margin: 10% 5% 0 5%;
+    align-items: center;
     
 }
-
-.opcaoCadastrarAgora {
-    text-decoration: none;
-    color: rgb(253, 208, 6);
-    font-size: large;
+.box1-textos{
+    margin-top: 20%;
 }
-.opcaoCadastrarAgora:hover{
-    color: #f25849;
+.box1-index{
+ width: 30%;
+ margin-right: 5%;
+}
+.box2-index{
+   width: 50%;
+   margin-top: 5%;
+}
+.img401{
+    width: 100%;
 }
 
+.card-erro-index{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 20px 15%;
+    width: 280px;
+    background-color: #f25849;
+    border-radius: 8%;
+    box-shadow: 2px 2px 2px rgb(122, 121, 121);
+}
+
+/*Menu */
 .nav{
     align-items: center;
 }
@@ -40,9 +81,6 @@ body {
 #menu{
 background-color: #f25849;
 box-shadow: 0px 4px 4px rgba(0,0,0, 0.25);
-}
-li{
-    border: none;
 }
 .nav-link{
     color: azure;
@@ -63,6 +101,16 @@ li{
     color: azure;
 }
 
+.opcaoCadastrarAgora {
+    text-decoration: none;
+    color: rgb(253, 208, 6);
+    font-size: large;
+}
+.opcaoCadastrarAgora:hover{
+    color: #f25849;
+}
+
+/*container login e cadastro */
 .box {
     flex-direction: column;
     width: 30%;
@@ -72,12 +120,9 @@ li{
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 
-.input-adm{
-    margin: 5px;
-}
-
+/* painel adm*/
 .opcao-ativo{
-    margin-right: 15%;
+
     font-size: large;
     font-weight: bold;
 }
@@ -86,18 +131,6 @@ li{
     font-weight: bold;
 }
 
-
-.btn {
-    background-color: #f25849;
-    color: azure;
-}
-
-.btn:hover {
-    background-color: rgb(253, 208, 6);
-    border: 1px solid azure;
-}
-
-/* painel adm*/
 .div-titulo{
     background-color: white;
     height: 75px;
@@ -105,18 +138,13 @@ li{
 #tituloAgenda{
   color: black; 
   margin-top: 10px;
-
 }
 label{
     font-size: large;
 }
-
-#div-botoes-editar{
-    margin-left: -5%;
-}
-
 .form-edicao{
-    width: 100vh;
+    width: 100%;
+   margin-right: 5%;
 }
 
 .table-striped{
@@ -142,6 +170,9 @@ th{
    justify-content: space-around;
     
 }
+.icons{
+    width: 18px;
+}
 /*card imagens */
 .box-imagens{
     display: flex;
@@ -156,20 +187,6 @@ th{
 .img-card{
     border-radius: 8%;
     width: 100%;
-    height: 150px;
-    
-}
-h2{
-    font-size: 20px;
+    height: 150px;   
 }
 
-.icons{
-    width: 18px;
-}
-.radio{
-    margin-right: 10%;
-    display: flex;
-}
-#div-botoes-editar{
-    padding-right: 12%;
-}

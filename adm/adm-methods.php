@@ -1,5 +1,5 @@
 <?php
-require("global-methods.php");
+require("../global-methods.php");
 
 //TODO Verificar se o email do usuário já existe no banco antes de continuar o cadastro
 
@@ -133,29 +133,29 @@ function imprimir_tabela($id, $nome, $email, $datanascimento, $ativo){
 
 function imprimir_campos_sem_input($id, $nome, $email, $datanascimento){
     echo "<form class='row g-0 form-edicao' action='painel-adm.php' method='POST'>
-    <div class='d-flex justify-content-start ms-5'>
+    <div class='d-flex justify-content-evenly '>
 
-        <input class='form-control' style='width:300px;' type='hidden' name='id' value='{$id}'/>
-        <div class='mb-3 row input-adm'>
+        <input class='form-control' type='hidden' name='id' value='{$id}'/>
+        <div class='mb-3 row input-adm' style='width:25%;>
             <label for='inputEmail4' class='form-label'>Nome</label>
-            <input class='form-control' style='width:300px;' type='text' name='nome' value='{$nome}'/>
+            <input class='form-control' style='width:100%;' type='text' name='nome' value='{$nome}'/>
         </div>
 
-        <div class='mb-3 row input-adm'>
+        <div class='mb-3 row input-adm' style='width:25%;'>
             <label for='inputEmail4' class='form-label'>Email</label>
-            <input class='form-control ' style='width:300px;' type='text' name='email' value='{$email}'/>
+            <input class='form-control' type='text' name='email' value='{$email}'/>
         </div>
 
-        <div class='mb-3 row input-adm'>
+        <div class='mb-3 row input-adm' style='width:18%;'>
             <label for='inputEmail4' class='form-label'>Data de nascimento</label>
-            <input class='form-control ' style='width:250px;' type='date' name='datanascimento' value='{$datanascimento}'/>
+            <input class='form-control text-center'  type='date' name='datanascimento' value='{$datanascimento}'/>
         </div>
     ";
 }
 
 function ativar_radio_ativo(){
-    echo "<div class='radio  mt-4'>
-    <div class='opcao-ativo'>
+    echo "<div class='radio d-flex mt-4' style='width:5%;'>
+    <div class='opcao-ativo mx-2'>
         <label for='ativo'>Ativo</label>
         <input type='radio' name='radio' id='ativo' value='1' checked='checked'>
     </div>
@@ -167,7 +167,7 @@ function ativar_radio_ativo(){
 }
 
 function ativar_radio_inativo(){
-    echo "<div class='radio  mt-4'>
+    echo "<div class='radio  mt-4' style='width:5%;>
     <div class='opcao-ativo'>
         <label for='ativo'>Ativo</label>
         <input type='radio' name='radio' id='ativo' value='1'>
@@ -180,7 +180,7 @@ function ativar_radio_inativo(){
 }
 
 function imprimir_botoes(){
-    echo "<div class=' mt-4' id='div-botoes-editar'>
+    echo "<div class=' mt-4' id='div-botaoSalvarAdm' style='width:5%;'>
     <input type='submit' name='salvar' value='Salvar' class='btn'/>" .
 "</div>" .
 "</div>" .

@@ -1,5 +1,5 @@
 <?php
-require("adm-methods.php");
+require("./adm-methods.php");
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -9,7 +9,7 @@ require("adm-methods.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <title>Teste adm</title>
 </head>
 <header>
@@ -24,7 +24,7 @@ require("adm-methods.php");
                         <a class="nav-link" aria-current="page" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="form-cadastro.php">Cadastrar</a>
+                        <a class="nav-link" aria-current="page" href="../painel.php">Painel</a>
                     </li>
                 </ul>
             </div>
