@@ -15,7 +15,9 @@ function fazer_login(){
     $users = $stmt->fetchAll(PDO::FETCH_ASSOC); 
     if (count($users) <= 0)
     {
-        echo "Email ou senha incorretos";
+        echo "<div class='alert alert-danger d-flex justify-content-center' width='80px' height='80px' role='alert'>
+                    <p text-align= 'center'>Email ou senha incorretos</p>
+                  </div>";
         exit;
     }
      
@@ -31,7 +33,9 @@ function iniciar_variaveis(){
     
     if (empty($email) || empty($senha))
     {
-        echo "Informe email e senha";
+        echo "<div class='alert alert-danger d-flex justify-content-center' width='80px' height='80px' role='alert'>
+                    <p text-align= 'center'>Informe email e senha</p>
+                  </div>";
         exit;
     }
     $usuario = array("senha"=> $senha, "email"=> $email);
@@ -60,7 +64,9 @@ function fazer_select($PDO, $email, $senhaHash){
 
 function validar_adm($user){
     if($user['ativo'] == false){
-        echo "Você ainda não está autorizado pelo ADM. Aguarde a autorização.";
+        echo "<div class='alert alert-danger d-flex justify-content-center' width='80px' height='80px' role='alert'>
+                    <p text-align= 'center'>Você ainda não está autorizado pelo ADM. Aguarde a autorização.</p>
+                  </div>";
         exit;
     }
 }
