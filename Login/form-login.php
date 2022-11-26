@@ -13,7 +13,10 @@ require('login.php');
     <title>Login</title>
 </head>
 <header>
+<<<<<<< HEAD
 
+=======
+>>>>>>> c51c23315ffba0a8af8c58e6b82ea916d5a59fbf
     <nav class="navbar navbar-expand-lg menu-index" id="menu">
         <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -21,7 +24,10 @@ require('login.php');
                     <li class="li-logo">
                         <img id="logo" src="../img/logo.png">
                     </li>
+<<<<<<< HEAD
 
+=======
+>>>>>>> c51c23315ffba0a8af8c58e6b82ea916d5a59fbf
                     <li >
                         <a class="nav-link opcao-menu" aria-current="page" href="../index.php">Home</a>
                     </li>
