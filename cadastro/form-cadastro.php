@@ -46,7 +46,7 @@ require("cadastro-methods.php");
             </div>
             <label for="exampleInputPassword1" class="form-label">Senha</label>
             <div class="input-group mb-3">
-                <input name="senha1" type="password" id="password" class="form-control" <?php settar_value($senha)?>> 
+                <input name="senha" type="password" id="password" class="form-control" <?php settar_value($senha)?>> 
                 <span class="input-group-text" id="togglePassword"><img id="olho" src="../img/eyeF.svg"
                         alt="icone de olho"></span>
             </div>

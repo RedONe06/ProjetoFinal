@@ -3,8 +3,6 @@ require("../global-methods.php");
 
 function cadastrar($nome, $email, $senha, $senha2, $datanascimento, $ativo){
     try {
-        var_dump($senha);
-        var_dump($senha2);
         if(comparar_senhas($senha, $senha2)){
             $stmt = db_connect()->prepare("INSERT INTO usuarios (nome, email, senha, datanascimento, ativo) VALUES (?, ?, ?, ?, ?)");
             $stmt->bindParam(1, $nome);
